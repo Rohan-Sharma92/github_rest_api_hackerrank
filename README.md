@@ -23,7 +23,7 @@ This application creates REST APIs to solve these requirements:
 - REST API
 - POSTMAN
 
-## How to compile and run the application with an example for each call
+## Installation and Deployment
 
 Install: git clone https://github.com/Rohan-Sharma92/github_rest_api_hackerrank.git
 
