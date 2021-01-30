@@ -33,11 +33,11 @@ Deploy: mvn spring-boot:run
 
 ## Examples for each call
 
-{{URL}}/events
-{{URL}}/events/{id}
-{{URL}}/events/actors/{id}
-{{URL}}/events/repos/{id}
-{{URL}}/events/repos/{repoId}/actors/{actorId}
-{{URL}}/erase
+- {{URL}}/events
+- {{URL}}/events/{id}
+- {{URL}}/events/actors/{id}
+- {{URL}}/events/repos/{id}
+- {{URL}}/events/repos/{repoId}/actors/{actorId}
+- {{URL}}/erase
 
 Import the request collections provided in GItHub REST API- SpringBoot.postman_collection.json in POSTMAN 
