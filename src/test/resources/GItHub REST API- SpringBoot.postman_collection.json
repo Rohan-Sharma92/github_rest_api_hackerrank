@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "b5623fcc-f510-43cb-abfb-9d5de56215ce",
+		"name": "GItHub REST API- SpringBoot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/events",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\":40551916639,\n  \"type\":\"PushEvent\",\n  \"actor\":{\n    \"id\":2790320,\n    \"login\":\"daniel30\",\n    \"avatar_url\":\"https://avatars.com/2790311\"\n  },\n  \"repo\":{\n    \"id\":352806,\n    \"name\":\"johnbolton/exercitationem\",\n    \"url\":\"https://github.com/johnbolton/exercitationem\"\n  },\n  \"created_at\":\"2015-10-03 06:13:50\"\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/events",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/events/actors/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/events/actors/2790320",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"events",
+						"actors",
+						"2790320"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/events/repos/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/events/actors/2790320",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"events",
+						"actors",
+						"2790320"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/events/repos/{id}/actors/{actorId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/events/actors/2790320",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"events",
+						"actors",
+						"2790320"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/events",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/events/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/events",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/erase",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/erase",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"erase"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
